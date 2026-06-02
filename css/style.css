@@ -80,6 +80,7 @@ input:focus {
     position: fixed;
     background-color: var(--black6);
     width: 100%;
+    z-index: 100;
 }
 
 .header .logo {
@@ -271,6 +272,7 @@ input:focus {
 .course-img-wrapper {
     overflow: hidden;
     position: relative;
+    z-index: 1;
 }
 
 .course-lightning-wrapper {
@@ -285,9 +287,12 @@ input:focus {
     right: -50px;
 }
 
+.course-img {
+    transition: all 0.4s ease-in-out;
+}
+
 .course-item:hover .course-img {
     transform: scale(1.1);
-    transition: all 0.4s ease-in-out;
 }
 
 .course-title {
@@ -551,11 +556,15 @@ input:focus {
 .blog-img-wrapper {
     margin-top: 50px;
     overflow: hidden;
+    z-index: 1;
+}
+
+.blog-img {
+    transition: all 0.4s ease-in-out;
 }
 
 .blog-item:hover .blog-img {
     transform: scale(1.1);
-    transition: all 0.4s ease-in-out;
 }
 
 .blog-item:hover .blog-title {
